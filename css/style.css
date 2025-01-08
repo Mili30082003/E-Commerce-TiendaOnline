@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h1-style{
+    font-size: 7em;
+    font-weight: 700;
+    color: black;
+    
+}
+
+
+.header {
+    background-color: rgba(179, 179, 179, 0.099);
+    padding: 0.5em;
 }
 
 .nav-item{
@@ -21,4 +37,91 @@
     display: inline-block;
     font-size: 16px;
     
+}
+
+.imagen-producto {
+    width: 50%;
+    height: 50%;
+   
+
+}
+
+.oferta {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.oferta-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: calc(33.3% - 15px);
+    background-color: rgba(179, 179, 179, 0.223);
+    padding: 35px;
+}
+
+.oferta-img {
+    flex-basis: 50%;
+    margin-right: 15px;
+
+}
+
+.oferta-img img {
+    width: 100%;
+    height: auto;
+}
+
+.oferta-texto {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.oferta-texto h3{
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.productos {
+    padding: 50px 0;
+    text-align: center;
+}
+.contenido-producto{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 50px;
+}
+.producto {
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(179, 179, 179, 0.3);
+}
+
+.producto img {
+    width: 250px;
+    height: 370px;
+    margin-bottom: 20px;
+}
+
+.producto h3{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-weight: 800;
 }
