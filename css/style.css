@@ -15,12 +15,88 @@
 
 
 .header {
-    background-color: rgba(179, 179, 179, 0.099);
-    padding: 0.5em;
+    background-color: rgba(179, 179, 179, 0.081);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-item{
+.logo {
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800;
     text-decoration: none;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    list-style: none;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito {
+    display: none;
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: gray;
+    padding: 20px;
+    min-height: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: white;
+}
+
+.borrar {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
 }
 
 .imagen-banner {
@@ -93,6 +169,7 @@
     border-radius: 5px;
     font-size: 15px;
     text-decoration: none;
+   
 }
 
 .productos {
