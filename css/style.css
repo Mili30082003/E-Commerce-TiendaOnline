@@ -125,3 +125,10 @@
 .precio {
     font-weight: 800;
 }
+
+.elemento {
+    background-color: rgba(128, 128, 128, 0.044);
+   width: 25%;
+   margin: 2em;
+   padding: 1em;
+}
